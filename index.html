@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header class="container">
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-full.svg" alt="" />
+      </a>
+    </header>
+    <!-- Form starts -->
+    <main class="container-sm">
+      <section class="home">
+        <h2>
+          Your Journey to Coding Conf
+          <br />
+          2025 Starts Here!
+        </h2>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+        <form action="" class="form">
+          <label for="uploadAvatar">Upload Avatar </label>
+          <input
+            type="file"
+            placeholder="Drag and drop or click to upload"
+            name="uploadAvatar"
+            accept="image/png, image/jpeg"
+            id="uploadAvatar"
+          />
+          <p>
+            <img src="./assets/images/icon-info.svg" alt="" /> Upload your photo
+            (JPG or PNG, max size: 500KB).
+          </p>
+          <label for="fullName">Full Name</label>
+          <input type="text" name="fullName" id="fullName" />
+          <label for="Email">Email Address</label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            name="Email"
+            id="Email"
+          />
+          <label for="GitHubUsername">GitHub Username</label>
+          <input
+            type="text"
+            placeholder="@yourusername"
+            name="GitHubUsername"
+            id="GitHubUsername"
+          />
+          <div>
+            <button type="submit" id="submitButton">Generate My Ticket</button>
+          </div>
+        </form>
+      </section>
+      <!-- Form ends -->
+
+      <!-- Generated tickets starts -->
+      <section class="ticket">
+        <h2>
+          Congrats,
+          <span id="nameUser"></span>!<br> Your ticket is ready.
+        </h2>
+        <p class="textEmail">
+          We've emailed your ticket to
+      <span id="emailAddress">mariaenriqueta@gmail.com</span> and will send updates in the run up to the event.
+        </p>
+       
+        <section class="generador row">
+          <article class="col-10">
+            <div class="date">
+              <div> <img src="./assets/images/logo-mark.svg" alt=""><h3>Coding Conf</h3>
+              </div>
+               <p>Jan 31,  2025  /  Austin, TX</p>
+            </div>
+            <div class="info">
+              <div id="avatar">
+                <img src="./assets/images/image-avatar.jpg" alt="" id="foto">
+              </div>
+              <div class="personalInfo">
+                <p id="infoName">emanuel romero</p>
+                <p ><img src="./assets/images/icon-github.svg" alt=""><span id="infoHb"></span></p>
+              </div>
+            </div>  
+              </article>
+            <article class="col-2 code">
+              <p>#01609</p>
+            </article>
+        </section>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by <a href="#">Maria Romero</a>.
+      </div>
+    </main>
+    <!-- Generated tickets ends -->
+    <section class="bI">
+      <div></div>
+      
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

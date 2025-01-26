@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+:root {
+    --c_neutral: hsl(0, 0%, 100%);
+    --c_neutral300: hsl(252, 6%, 83%);
+    --c_neutral500: hsl(245, 15%, 58%);
+    --c_neutral700: hsl(245, 19%, 35%);
+    --c_neutral900: hsl(248, 70%, 10%);
+
+    --c_orange500: hsl(7, 88%, 67%);
+    --c_orange700: hsl(7, 71%, 60%);
+
+    --c_orangeG: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-image: url(./assets/images/pattern-lines.svg),
+    url(./assets/images/pattern-squiggly-line-top.svg),
+    url(./assets/images/pattern-squiggly-line-bottom-desktop.svg),
+    url(./assets/images/background-desktop.png);
+
+  background-position: center, top right, bottom left, center;
+  background-size: cover, 350px, 700px, cover;
+  background-repeat: no-repeat;
+    font-size: 20px;
+    font-family: "Inconsolata", serif;
+    color: var(--c_neutral);
+    /* background-image: url(./assets/images/background-desktop.png);
+    background-position: left  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+.bI{
+   
+    
+    & :first-child{
+        width: 160px;
+        height: 160px;
+        background-image: url(./assets/images/pattern-circle.svg);
+        background-position: center  center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: -50px;
+        left: 30px;
+        
+    }}
+
+header{
+   text-align: center;
+   margin: 30px ;
+}
+main{
+    
+    margin: auto;
+     & .home{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        & h2{
+            text-align: center;
+            font-weight: 700;
+            font-size: 3rem;
+    
+        }
+        & p{
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            
+        }
+        & .form {
+            
+            display: flex;
+            flex-direction: column;
+        
+                
+                
+                & label{
+                    margin-top: 15px;
+                    font-size: 20px;
+                    font-weight: 300;
+
+                    
+                }
+                & input {
+                    color: white;
+                    width: 100%;
+                    border: 0,1px solid rgb(255, 255, 255);
+                    background-color: rgba(255, 255, 255, 0.08);
+                    border-radius: 10px;
+                }
+                
+                    input::placeholder{
+                        font-size: 16px;
+                        color: white;
+                        padding: 10px;
+                    }
+                    
+                
+
+                & #uploadAvatar{
+                    height: 100px;
+                    border: 1px dashed white;
+                   
+                }
+                & p{
+                    font-size: 12px;
+                    text-align: start;
+                    margin-top: 7px;
+                }
+                & button{
+                  width: 100%;
+                  margin-top: 20px;
+                  background-color: var(--c_orange500);
+                  border-radius: 10px;
+                  font-size: 15px;
+                  padding: 8px;
+                  margin: 15px 0; 
+                  font-weight: 900;
+                }}
+            }
+                & .ticket{
+                    margin: auto;
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    & h2{
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 3rem;
+                        & span{
+                            background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(7, 85%, 71%), hsl(0, 0%, 100%));
+                            background-clip: text;
+                            color: transparent;
+
+                        }}
+                    &  .textEmail{
+                        width: 390px;
+                        margin: 20px 0 40px 0;
+                        font-size: 20px;
+                        font-weight: 300;
+                        text-align: center;
+                        & span{
+                            color: var(--c_orange500);
+                        }
+            
+                    }
+
+                    & .generador{
+                        width: 500px;
+                        height: 240px;
+                        margin-top: 80px;
+                        background-image: url(./assets/images/pattern-ticket.svg);
+                        background-position: center  center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        & .date{
+                            padding: 15px;
+                            & :first-child{
+                                display: flex;
+                                & h3{
+                                    font-size: 2.5rem;
+                                    margin-left: 10px ;
+                                }}
+                            & p{
+                                font-size: 1rem;
+                                margin-left: 50px;
+                                font-weight: 200;
+                                letter-spacing: 2px;
+                            }
+                            
+                        }
+                        & .info{
+                            display: flex;
+                            & #avatar{
+                                & img{
+                                    width: 80px;
+                                    border-radius: 15px;
+                                    padding: 5px;
+
+                                }
+                               
+                            }
+                            & .personalInfo {
+                                & p{
+                                    margin: 0 20px ;
+                                    font-size: 1rem;
+                                }
+                                & #infoName{
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                }
+                                & #infoHb {
+                                    font-size: 1.2rem;
+                                    font-weight: 200;
+                                    & span{
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                        
+                }
+
+     
+            }
+        
+        
+
+.attribution{
+    margin-top: 30px;
+    text-align: center;
+    & a {
+        color: white;
+    }
+}}
+/* .img-3{
+    & img{
+        height: 400px;
+        position: absolute;
+         top: 150px;
+        left: ;
+        z-index: -1;
+    } */
+
+/* } */
+.code {
+    writing-mode: vertical-lr;
+    margin: auto;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.457);
+    
+}
+@media (width <= 807px){
+   
+    body {
+        background-image: url(./assets/images/pattern-lines.svg),
+          url(./assets/images/pattern-squiggly-line-top.svg),
+          url(./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg),
+          url(./assets/images/background-mobile.png);
+    
+        background-position: center, top 50px right, bottom -200px left, center;
+        background-size: cover, 50%, 100%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+      }
+    main{
+        & .home{
+            & h2{
+                font-size: 2.2rem;
+            }
+           
+        }
+        & .ticket{
+            & h2{
+                font-size: 2.2rem;
+            }
+            & .generador{
+               width: 450px;
+               height: 200ppx;
+        }
+    }
+   
+    
+
+}
+
+}
